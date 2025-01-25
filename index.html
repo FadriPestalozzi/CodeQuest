@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuest</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 1em;
+            text-align: center;
+        }
+        .navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+        .blue {
+            color: blue;
+        }
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#about" class="blue">About Hackergarten Events</a></li>
+            <li><a href="#protips-leads" class="red">Protips for Project Leads</a></li>
+            <li><a href="#protips-contributors" class="blue">Protips for Contributors</a></li>
+            <li><a href="#code-of-conduct" class="red">Code of Conduct</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>CodeQuest: A Hackathon for young tinkerers</h1>
+        <p>Join us in Zurich from March 28-30, 2025!</p>
+        <div class="language-selector">
+            <label for="language">Language:</label>
+            <select id="language" onchange="location = this.value;">
+                <option value="index.html">English</option>
+                <option value="index_de.html">Deutsch</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Event Details</h2>
+            <p>Location: Zurich (exact location TBD)</p>
+            <p>Come and showcase your skills, collaborate with peers, and innovate!</p>
+        </section>
+        <section id="about">
+            <h2>About Hackergarten Events</h2>
+            <p>hack-commit-push is a series of events inviting attendees to start contributing to Free/Open Source projects with the help of their maintainers. The event is open to everyone, regardless of their experience. Every contribution counts!</p>
+        </section>
+        <section id="protips-leads">
+            <h2>Protips for Project Leads</h2>
+            <h3>How to Become One</h3>
+            <p>You do not need to be the owner of an open-source project to be accepted as a project lead. However, you must contribute regularly and be knowledgeable about the entire codebase.</p>
+            <h3>Before the Event Starts</h3>
+            <p>Promote the event and your project to attract contributors! Prepare a presentation or video explaining your project.</p>
+            <h3>During the Event</h3>
+            <p>Welcome contributors and provide general information. Split into smaller groups for collaboration.</p>
+            <h3>After the Event</h3>
+            <p>Send a recap of the contributions to the organizers.</p>
+        </section>
+        <section id="protips-contributors">
+            <h2>Protips for Contributors</h2>
+            <h3>Do I Qualify?</h3>
+            <p>Short answer: yes, you do! Everyone is welcome, regardless of experience.</p>
+            <h3>Before the Event Starts</h3>
+            <p>Share the event with friends and prepare by reading project documentation.</p>
+            <h3>During the Event</h3>
+            <p>Attend training sessions and collaborate with others.</p>
+            <h3>After the Event</h3>
+            <p>If you liked the experience, feel free to continue your contributions!</p>
+        </section>
+        <section id="code-of-conduct">
+            <h2>Code of Conduct</h2>
+            <p>Our events are meant to be a harassment-free experience for everyone. We will not tolerate harassment of participants in any form.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Youth Hackathon. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
