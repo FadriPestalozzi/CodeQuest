@@ -4,10 +4,12 @@ import os
 # Set the title of the web app
 st.title("CodeQuest: A Hackathon for young tinkerers")
 
+
 # Load HTML content
 def load_html(file):
     with open(file, 'r', encoding='utf-8') as f:
         return f.read()
+
 
 # Display the HTML content
 html_content_en = load_html('index.html')

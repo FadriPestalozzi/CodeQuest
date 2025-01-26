@@ -1,7 +1,4 @@
-// script.js
-// Placeholder for future JavaScript functionality
-
-// Add this function to handle language selection
+// handle language selection
 function changeLanguage() {
     const languageSelector = document.getElementById('language');
     languageSelector.onchange = function() {
